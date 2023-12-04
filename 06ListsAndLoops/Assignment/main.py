@@ -70,11 +70,9 @@ def mostly_true(list1):
             FCount = FCount + 1
     if TCount > FCount:
         return True
-    elif TCount == FCount:
-        return "Equal amounts"
     else:
         return False
-    
+
 print(mostly_true(["True","False","False","False"]))
 print(mostly_true(["True","True","True","False"]))
 print(mostly_true(["True","True","False","False"]))
@@ -91,5 +89,30 @@ def has_vowel(list1):
 print(has_vowel(["a","t","w"]))
 print(has_vowel(["i","g","p"]))
 print(has_vowel(["q","r","w"]))
+print("#############")
+def all_the_same(list1):
+    first = list1[0]
+    for number in list1:
+        if first != list1[1]:
+            return False 
+        
+        return True 
+    
+
+print(all_the_same([1,1,1]))
+print(all_the_same([1,2,3]))
+print(all_the_same([5,6,3]))
 
 
+def increasing(list1):
+    for num in list1: 
+        if list1[-1] > num:
+            return True 
+        return False 
+    
+print(increasing([1,2,3]))
+print(increasing([3,2,1]))
+print(increasing([1,2,3,4,5]))
+
+    
+#def is_incrementing():

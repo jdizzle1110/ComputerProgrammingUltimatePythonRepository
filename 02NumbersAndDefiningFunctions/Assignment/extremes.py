@@ -1,0 +1,6 @@
+print("Enter numbers")
+x = int(input("Enter x: "))
+y = int(input("Enter y: "))
+z = int(input("Enter z: "))
+print("The largest of the 3 numbers is", max(x,y,z))
+print("The largest of the 3 numbers is", min(x,y,z))

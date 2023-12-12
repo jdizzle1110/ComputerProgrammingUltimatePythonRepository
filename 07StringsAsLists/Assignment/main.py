@@ -86,3 +86,58 @@ print(remove_vowels("apple"))
 print(remove_vowels("banana"))
 print(remove_vowels("elephant"))
 
+print("#################")
+def to_camel_case(word):
+    result = ""
+    nextupper = False
+    for letter in word:
+        if nextupper == False:
+            result = result + letter.upper()
+            nextupper = False 
+        elif nextupper == True:
+            result = result + letter 
+        nextupper == True
+    if result == " ":
+            result = result + letter.upper()
+            nextupper = True
+    return result
+
+print(to_camel_case("hello world"))
+print(to_camel_case("to camel case"))
+print(to_camel_case("another test case"))
+
+
+print("#################")
+def to_snake_case(word):
+    result = "_"
+    nextupper = True
+    for letter in word:
+        if nextupper == True:
+            result 
+            nextupper = False
+        elif letter == " ":
+            pass
+            nextupper = True
+    return result 
+
+print(to_snake_case("hello world"))
+print(to_snake_case("to camel case"))
+print(to_snake_case("another test case"))
+print("#################")
+def without_duplicates(string):
+    result = ""
+    previous = string[0] - 1
+    for numbers in string:
+        if numbers == previous:
+            result = result - numbers
+    return result
+print(without_duplicates([1,2,3,3,1]))
+print(without_duplicates([4,4,5,5,6,6]))
+print(without_duplicates([7,7,8,8,9,9]))
+
+
+
+
+
+
+

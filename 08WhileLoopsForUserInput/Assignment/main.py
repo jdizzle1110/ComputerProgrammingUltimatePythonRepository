@@ -33,4 +33,22 @@ def number_guesser_with_lives():
 
 #print(number_guesser_with_lives())
 
+
+def vending_machine():
+    print("Enter 50 cents")
+    amountLeft = 50 
+    coin = int(input("Enter change: "))
+    while coin > 0:
+        if amountLeft < 1:
+            print("Your change back is",abs(amountLeft))
+            if coin == 25 or coin == 10 or coin == 5:
+                amountLeft = amountLeft - coin
+                print("amount left",amountLeft,"cents")
+                coin = int(input("Enter change: "))
+
+
+
+print(vending_machine())
+
+
                    
